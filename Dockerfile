@@ -6,7 +6,7 @@ ENV PATH=/usr/local/hugo:${PATH}
 
 RUN set -x \
     && apk upgrade --update \
-    && apk add --update ca-certificates bash curl wget \
+    && apk add --update ca-certificates bash curl wget git \
     && rm -rf /var/cache/apk/* \
     && mkdir /usr/local/hugo \
     && wget https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_BINARY}.tar.gz -O /usr/local/hugo/${HUGO_BINARY}.tar.gz \
