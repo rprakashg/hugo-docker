@@ -1,6 +1,6 @@
 FROM golang:1.8.3-alpine
 
-ENV HUGO_VERSION 0.25 
+ENV HUGO_VERSION 0.27 
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux-64bit 
 ENV PATH=/usr/local/hugo:${PATH}
 
