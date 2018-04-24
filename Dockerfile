@@ -1,4 +1,4 @@
-FROM golang:1.8.3-alpine
+FROM golang:1.10-alpine3.7
 
 ENV HUGO_VERSION 0.27 
 ENV HUGO_BINARY hugo_${HUGO_VERSION}_linux-64bit 
@@ -13,4 +13,3 @@ RUN set -x \
     && tar xzf /usr/local/hugo/${HUGO_BINARY}.tar.gz -C /usr/local/hugo/ \
   && rm /usr/local/hugo/${HUGO_BINARY}.tar.gz \
     && rm -rf /tmp/* /var/cache/apk/* 
-
