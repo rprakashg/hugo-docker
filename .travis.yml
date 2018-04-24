@@ -5,7 +5,7 @@ script:
 - "./build.sh"
 after_success:
 - docker login -u ${DOCKER_USERNAME} -p ${DOCKER_PASSWORD}
-- docker push rprakashg/hugo-docker:latest
+- docker push rprakashg/hugo-docker
 env:
   global:
   - secure: HlOHbgFN1HG/VpT8VXJpS6OMYHeHlrwEm0dSNRGkH8M+wJ5Yhli9OiCZT722Q9oiQBD37oseggdwQ2wNGQk8CoV6QXZLVtJTnDYqLLZNlESZZ2kk+M/BcMXKKW2v4SgYUTwxXhtHfZ0vWR7VAZv6pwswJUsr8wMvqrttuvtG2Mf42PGNQmfmdEBr109SZOEJLzKbf6KeBqI2vrOZm/qDCpK44IHocveknXA0Ou18JWcLf3I/StRSPPG7jTKZ4be27jVrG7tRhUyNhLG4j9AjHN4kYjShIJPUkSln54MYqLEKTvROLy72BFCMSuEYuLJzPD0laXfSNzHo4A8uBk/bnXeoxJLFx/Z1uWtfqiElAbW+FYZpRfVzbAhdxysfRXJ4YZpA0fskhN5EtnKQ+91mPf3Vj27BYb2cmf+NyWHZmIhbKa1BUTCE+k6KgRCcjPWHH5tS6+VZJFhHZtx9NyXyM2Y+q0+xFhqVnWnHJ2pR+34E8srBKsvwWb3zGiEUxFMM+Zmuxd07QRMzQWrcPEuD0UIco+vYrZSNh5MhgRmWXqJYpS5xajoFr4tdR7S7Z/TFDal1xUwdvsA09SQ2BJgCRtcnicutaKXFg4dTAiGGLRob6owz0lFyleEsRng0gvkjR797ghKipANfm3MFxJXoHmfjBcfRLJDQiW7BswLXn8g=

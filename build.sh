@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-docker build -t rprakashg/hugo-docker:v2 .
+docker build -t rprakashg/hugo-docker .
